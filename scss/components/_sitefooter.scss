@@ -1,0 +1,28 @@
+.site-footer {
+	padding-top: 3em;
+	background-color: $footer-bg-color;
+	color: $footer-text-color;
+	
+	h1, h2, h3, h4, h5 {
+		color: $footer-text-color;
+	}
+	
+	a {
+		color: $footer-link-color;
+	}
+}
+
+.footer-menu-bar {
+	background-color: darken($footer-bg-color, 10%);
+	a {
+		color: $footer-text-color;
+	}
+}
+
+.footer-colophon {
+	background-color: darken($footer-bg-color, 20%);
+	a {
+		color: $footer-text-color;
+	}
+	
+}
