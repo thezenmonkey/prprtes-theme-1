@@ -1,7 +1,7 @@
 <% include ListingHeader %>
 <div class="row">
 	<% if $Images.Count > 1 %>
-		<section class="small-12 columns">
+		<section class="small-12  columns">
 			<h2>Gallery</h2>
 			<div>
 				<ul class="inline-list">

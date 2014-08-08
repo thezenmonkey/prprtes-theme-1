@@ -1,7 +1,7 @@
 @import "settings";
 @import "foundation";
 
-@import "components/sitefooter";
+
 
 // Or selectively include components
 // @import
@@ -40,3 +40,44 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+
+span.block {
+	display: block;
+}
+
+
+@media #{$small-only} {
+	.csr, .csb {
+		padding-right: 0;
+	}
+	
+	.csl, .csb {
+		padding-left: 0;
+	}
+}
+
+@media #{$medium-only} {
+	.cmr, .cmb {
+		padding-right: 0;
+	}
+	
+	.cml, .cmb {
+		padding-left: 0;
+	}
+}
+
+@media #{$large-up} {
+	.clr, .clb {
+		padding-right: 0;
+	}
+	
+	.cll, .clb {
+		padding-left: 0;
+	}
+}
+
+
+@import "components/sitefooter",
+		"components/siteheader",
+		"pages/listings";

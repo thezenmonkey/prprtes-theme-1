@@ -1,2 +1,6 @@
 _settings.scss
-/scss/_settings.scss
+scss/_settings.scss
+.sass-cahe/*
+scss/_settings.scss
+
+*.scssc

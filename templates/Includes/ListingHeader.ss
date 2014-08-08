@@ -1,28 +1,31 @@
-<header class="row">
-	<div class="small-12 columns">
-		<h1>$Address <span>$Town</span> <span>$SiteConfig.Province</span> <span>$PostalCode</span> <span>MLS: $MLS</span></h1>
-		<h2>
-			$FormattedPrice <% if $SaleOrRent == "Lease" %><span>/month</span><% end_if %>
-			<% if $SaleOrRent == "Sale" && $HideMonthly == 0 && $MonthlyPrice %>
-				<small>Own For: $MonthlyPrice/month</small>
-			<% end_if %>
-			<% if $SaleOrRent == "Sale" && $HideMonthly == 0 && $MonthlyPrice && $CondoFee %> + <% end_if %>
-			<% if $CondoFee %><small>${$CondoFee}/month condo fee</small><% end_if %>
-			
-		</h2>
-		<img src="http://placehold.it/1400x787&text=Image+or+Video">
+<header class="row listing-header">
+	<div class="small-12 large-3 columns">
+		<div class="clearfix">
+			<h1 class="address">$Address <span class="block"><span class="town address-part">$Town</span> <span class="province address-part">$SiteConfig.Province</span> <span class="postal-code address-part">$PostalCode</span> <span class="mls-number address-part">MLS: $MLS</span></span></h1>
+			<h2>
+				$FormattedPrice <% if $SaleOrRent == "Lease" %><span>/month</span><% end_if %>
+				<% if $SaleOrRent == "Sale" && $HideMonthly == 0 && $MonthlyPrice %>
+					<span class="block monthly">Own For: $MonthlyPrice/month</span>
+				<% end_if %>
+				<% if $SaleOrRent == "Sale" && $HideMonthly == 0 && $MonthlyPrice && $CondoFee %> + <% end_if %>
+				<% if $CondoFee %><span class="block monthly">${$CondoFee}/month condo fee</span><% end_if %>
+			</h2>
+		</div>
 		<div>
 			<ul class="no-bullet">
-				<% if $NumberBed %><li>Bedrooms: $NumberBed</li><% end_if %>
-				<% if $NumberBath %><li>Bathrooms: $NumberBath</li><% end_if %>
-				<% if $NumberRooms %><li>Total Rooms: $NumberRooms</li><% end_if %>
-				<% if $TotalArea %><li>Total Area: $TotalArea</li><% end_if %>
-			</ul>		
-		</div>
-		<div class="panel">
+				<% if $NumberBed %><li><span class="bed-icon">Bedrooms:</span> $NumberBed</li><% end_if %>
+				<% if $NumberBath %><li><span class="bath-icon">Bathrooms:</span> $NumberBath</li><% end_if %>
+				<% if $NumberRooms %><li><span class="room-icon">Total Rooms:</span> $NumberRooms</li><% end_if %>
+				<% if $TotalArea %><li><span class="area-icon">Total Area:</span> $TotalArea ft&sup2;</li><% end_if %>
+			</ul>
 			<a class="button expand" href="#">Schedule a Viewing</a>
 		</div>
-		<div>
+	</div>
+	<div class="small-12 medium-12 large-9 columns cover-image">
+		<img src="http://placehold.it/1400x787&text=Image+or+Video">
+	</div>
+	<div class="small-12 columns">
+		<div class="panel">
 			<dl class="sub-nav">
 				<dt>Tools:</dt>
 				<% if $Lat && $Lon %>
