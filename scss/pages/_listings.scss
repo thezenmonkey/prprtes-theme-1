@@ -1,0 +1,89 @@
+.listing-header {
+	border-top: 1px solid $border-color;
+	
+	span.block {
+		line-height: 0;
+	}
+	
+	h1, h2 {
+		text-align: center;
+		line-height: 1.25em;
+		margin-bottom: 0;
+	}
+	
+	h1 {
+		font-size: 2em;
+		padding-top: 0.5em;
+		margin-top: 0;
+		
+		.mls-number {
+			display:block;
+			font-weight: $bold-font-weight;
+		}
+		
+	}
+	
+	h2 {
+		font-size: 1.75em;
+		padding-bottom: 0.214em;
+	}
+	
+	.address-part, .monthly {
+		font-size: 0.5em;
+		line-height: 1.25em;
+	}
+	
+	span.monthly {
+		line-height: 1.25em;
+	}
+}
+
+
+
+
+.listing-header {
+	@media #{$medium-up} {
+		h1, h2 {
+			text-align: left;
+		}
+		
+		h2 {
+			border-bottom: none;
+			margin-top:0;
+		}
+	}
+}
+
+.listing-header {
+	@media #{$medium-only} {
+		h1, h2 {
+			float: left;
+			width: 50%;
+		}
+		
+		h2 {
+			text-align: right;
+			padding-top: 0.5em;
+		}
+		
+		.cover-image {
+			margin-top: 1em;
+			padding-top: 1em;
+			border-top: 1px solid $border-color;
+		}
+	}
+}
+
+.listing-header {
+	@media #{$large-up} {
+		border-top: none;
+		
+		h2 {
+			padding: 0.5em 0;
+			margin:0.5em 0;
+			border-bottom: 1px solid $border-color;
+			border-top: 1px solid $border-color;
+		}
+		
+	}
+}

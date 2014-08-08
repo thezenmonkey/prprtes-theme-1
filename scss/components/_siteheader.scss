@@ -1,0 +1,29 @@
+header.site-header {
+	background-color: lighten($topbar-bg-color, 75);
+	text-align: center;
+	
+	span.site-contact, span.branding {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		display: block;
+	}
+	
+	span.site-contact {
+		background-color: $primary-color;
+		color: #fff;
+		font-weight: $bold-font-weight;
+		padding-right: 0.5em;
+		padding-left: 0.5em;
+		
+		a {
+			color: #fff; 
+		}
+	}
+	
+}
+
+@media #{$medium-up} {
+	header.site-header {
+		text-align: left;
+	}
+}
