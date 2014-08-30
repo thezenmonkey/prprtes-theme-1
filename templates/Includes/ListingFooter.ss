@@ -1,10 +1,10 @@
-<footer>
+<footer class="small-12 columns">
 	<% if $ClassName == "Listing" && $Agent %>
-		Agent Footer
+		<% include AgentListingFooter %>
 	<% else_if $ClassName == "MLSListing" %>
-		MLS Footer
+		<% include MLSListingFooter ContactForm=$Top.ContactForm %>
 	<% else %>
-		Listing Footer
+		<% include DefaultListingFooter %>
 	<% end_if %>
 	<% if $Level(2) %>
 		$Breadcrumbs

@@ -1,38 +1,43 @@
 <footer class="site-footer">
 	<div class="row">
 		<% with $SiteConfig %>
-			<div class="small-12 medium-4 large-3 columns">
+			<div class="small-12 medium-3 large-2 columns">
 				<h2>Brokerage Logo</h2>
 			</div>
-			<div class="small-12 medium-4 large-3 columns">
-				<ul class="vcard">
-					<li class="fn">$BusinessName</li>
-					<li class="street-address">$Address</li>
-					<li class="locality">$City</li>
-					<li><span class="state">$Province</span>, <span class="zip">$PostalCode</span></li>
-					<li class="email"><a href="$MainEmail">$MainEmail</a></li>
-					<li class="phone">$Phone</li>
-				</ul>
-			</div>
-			<div class="small-12 medium-4 large-3 columns">
-				NewsLetter Form
-			</div>
-			<div class="small-12 large-3 columns">
-				<h2>Social</h2>
-				<ul class="inline-list">
-					<% if $Twitter %><li><a href="http://twitter.com/$Twitter">Twitter</a></li><% end_if %>
-					<% if $FacebookURL %><li><a href="$FacebookURL">Facebook</a></li><% end_if %>
-					<% if $LinkedInURL %><li><a href="$LinkedInURL">LinkedIn</a></li><% end_if %>
-					<% if $GooglePlusURL %><li><a href="$GooglePlusURL">GooglePlus</a></li><% end_if %>
-					<% if $PinterestURL %><li><a href="$PinterestURL">Pinterest</a></li><% end_if %>
-				</ul>
+			<div class="small-12 medium-9 large-10 columns">
+				<div class="row">
+					<div class="small-12 medium-6 large-4 columns">
+						<ul class="vcard">
+							<li class="fn">$BusinessName</li>
+							<li class="street-address">$Address</li>
+							<li class="locality">$City</li>
+							<li><span class="state">$Province</span>, <span class="zip">$PostalCode</span></li>
+							<li class="email"><a href="$MainEmail">$MainEmail</a></li>
+							<li class="phone">$Phone</li>
+						</ul>
+					</div>
+					<div class="small-12 medium-6 large-4 columns">
+						NewsLetter Form
+					</div>
+					<div class="small-12 large-4 columns">
+						<h2>Social</h2>
+						<ul class="inline-list">
+							<% if $Twitter %><li><a href="http://twitter.com/$Twitter">Twitter</a></li><% end_if %>
+							<% if $FacebookURL %><li><a href="$FacebookURL">Facebook</a></li><% end_if %>
+							<% if $LinkedInURL %><li><a href="$LinkedInURL">LinkedIn</a></li><% end_if %>
+							<% if $GooglePlusURL %><li><a href="$GooglePlusURL">GooglePlus</a></li><% end_if %>
+							<% if $PinterestURL %><li><a href="$PinterestURL">Pinterest</a></li><% end_if %>
+						</ul>
+					</div>
+				
+				</div>
 			</div>
 		<% end_with %>
 	</div>
 	<div class="footer-menu-bar">
 		<div class="row">
-			<div class="small-12 columns">
-				<ul class="inline-list">
+			<div class="small-12 columns text-center">
+				<ul class="inline-list centered-list">
 					<% if $MenuSet('Footer Menu') %>
 						<% loop $MenuSet('Footer Menu') %>
 							<li><a href="$Link">$MenuTitle</a></li>

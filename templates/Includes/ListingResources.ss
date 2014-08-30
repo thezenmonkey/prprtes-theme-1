@@ -1,4 +1,3 @@
-
 <h2>Resources</h2>
 <ul>
 	<% if $Featuresheet %><li><a href="$Featuresheet.Filename">Download Feature Sheet</a></li><% end_if %>

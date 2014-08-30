@@ -8061,35 +8061,50 @@ span.block {
   display: block;
 }
 
+/* line 49, ../scss/app.scss */
+.bottom-0 {
+  margin-bottom: 0;
+}
+
+/* line 53, ../scss/app.scss */
+.panel.clear {
+  background-color: transparent;
+}
+
+/* line 57, ../scss/app.scss */
+.centered-list {
+  display: inline-block;
+}
+
 @media only screen and (max-width: 40em) {
-  /* line 51, ../scss/app.scss */
+  /* line 62, ../scss/app.scss */
   .csr, .csb {
     padding-right: 0;
   }
 
-  /* line 55, ../scss/app.scss */
+  /* line 66, ../scss/app.scss */
   .csl, .csb {
     padding-left: 0;
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 61, ../scss/app.scss */
+  /* line 72, ../scss/app.scss */
   .cmr, .cmb {
     padding-right: 0;
   }
 
-  /* line 65, ../scss/app.scss */
+  /* line 76, ../scss/app.scss */
   .cml, .cmb {
     padding-left: 0;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 71, ../scss/app.scss */
+  /* line 82, ../scss/app.scss */
   .clr, .clb {
     padding-right: 0;
   }
 
-  /* line 75, ../scss/app.scss */
+  /* line 86, ../scss/app.scss */
   .cll, .clb {
     padding-left: 0;
   }
@@ -8136,73 +8151,127 @@ header.site-header {
 header.site-header span.site-contact, header.site-header span.branding {
   padding-top: 1em;
   padding-bottom: 1em;
+}
+/* line 10, ../scss/components/_siteheader.scss */
+header.site-header span.site-contact-holder, header.site-header span.branding {
   display: block;
 }
-/* line 11, ../scss/components/_siteheader.scss */
-header.site-header span.site-contact {
+/* line 14, ../scss/components/_siteheader.scss */
+header.site-header span.site-contact, header.site-header span.phone-icon {
+  display: inline-block;
+}
+/* line 18, ../scss/components/_siteheader.scss */
+header.site-header span.site-contact-holder {
   background-color: #008cba;
   color: #fff;
   font-weight: 700;
   padding-right: 0.5em;
-  padding-left: 0.5em;
 }
-/* line 18, ../scss/components/_siteheader.scss */
-header.site-header span.site-contact a {
+/* line 24, ../scss/components/_siteheader.scss */
+header.site-header span.site-contact-holder a {
   color: #fff;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 26, ../scss/components/_siteheader.scss */
+  /* line 32, ../scss/components/_siteheader.scss */
   header.site-header {
     text-align: left;
   }
 }
+/* line 37, ../scss/components/_siteheader.scss */
+.name h1 {
+  text-align: left;
+}
+
+/* line 41, ../scss/components/_siteheader.scss */
+span.phone-icon {
+  background-color: #006687;
+  display: inline-block;
+  padding: 0.75em 0.75em;
+}
+/* line 45, ../scss/components/_siteheader.scss */
+span.phone-icon img {
+  display: inline;
+  width: 1.75em;
+}
+
+/* line 1, ../scss/components/_gallery.scss */
+.gallery-holder {
+  border: none;
+  padding: 0.9375rem 0;
+}
+/* line 5, ../scss/components/_gallery.scss */
+.gallery-holder ul {
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  margin-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  height: 160px;
+}
+/* line 15, ../scss/components/_gallery.scss */
+.gallery-holder ul li {
+  display: inline;
+  margin-right: 0.9375rem;
+}
+/* line 20, ../scss/components/_gallery.scss */
+.gallery-holder ul li:first-of-type {
+  margin-left: 0.9375rem;
+}
+/* line 25, ../scss/components/_gallery.scss */
+.gallery-holder img {
+  line-height: 0;
+}
+
 /* line 1, ../scss/pages/_listings.scss */
 .listing-header {
   border-top: 1px solid #cccccc;
+  background-color: #fafafa;
 }
-/* line 4, ../scss/pages/_listings.scss */
+/* line 5, ../scss/pages/_listings.scss */
 .listing-header span.block {
   line-height: 0;
 }
-/* line 8, ../scss/pages/_listings.scss */
+/* line 9, ../scss/pages/_listings.scss */
 .listing-header h1, .listing-header h2 {
   text-align: center;
   line-height: 1.25em;
   margin-bottom: 0;
 }
-/* line 14, ../scss/pages/_listings.scss */
+/* line 15, ../scss/pages/_listings.scss */
 .listing-header h1 {
   font-size: 2em;
   padding-top: 0.5em;
   margin-top: 0;
 }
-/* line 19, ../scss/pages/_listings.scss */
+/* line 20, ../scss/pages/_listings.scss */
 .listing-header h1 .mls-number {
   display: block;
   font-weight: 700;
 }
-/* line 26, ../scss/pages/_listings.scss */
+/* line 27, ../scss/pages/_listings.scss */
 .listing-header h2 {
   font-size: 1.75em;
   padding-bottom: 0.214em;
 }
-/* line 31, ../scss/pages/_listings.scss */
+/* line 32, ../scss/pages/_listings.scss */
 .listing-header .address-part, .listing-header .monthly {
   font-size: 0.5em;
   line-height: 1.25em;
 }
-/* line 36, ../scss/pages/_listings.scss */
+/* line 37, ../scss/pages/_listings.scss */
 .listing-header span.monthly {
   line-height: 1.25em;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 46, ../scss/pages/_listings.scss */
+  /* line 47, ../scss/pages/_listings.scss */
   .listing-header h1, .listing-header h2 {
     text-align: left;
   }
-  /* line 50, ../scss/pages/_listings.scss */
+  /* line 51, ../scss/pages/_listings.scss */
   .listing-header h2 {
     border-bottom: none;
     margin-top: 0;
@@ -8210,17 +8279,17 @@ header.site-header span.site-contact a {
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 59, ../scss/pages/_listings.scss */
+  /* line 60, ../scss/pages/_listings.scss */
   .listing-header h1, .listing-header h2 {
     float: left;
     width: 50%;
   }
-  /* line 64, ../scss/pages/_listings.scss */
+  /* line 65, ../scss/pages/_listings.scss */
   .listing-header h2 {
     text-align: right;
     padding-top: 0.5em;
   }
-  /* line 69, ../scss/pages/_listings.scss */
+  /* line 70, ../scss/pages/_listings.scss */
   .listing-header .cover-image {
     margin-top: 1em;
     padding-top: 1em;
@@ -8229,15 +8298,109 @@ header.site-header span.site-contact a {
 }
 
 @media only screen and (min-width: 64.063em) {
-  /* line 77, ../scss/pages/_listings.scss */
+  /* line 78, ../scss/pages/_listings.scss */
   .listing-header {
     border-top: none;
   }
-  /* line 81, ../scss/pages/_listings.scss */
+  /* line 82, ../scss/pages/_listings.scss */
   .listing-header h2 {
     padding: 0.5em 0;
     margin: 0.5em 0;
     border-bottom: 1px solid #cccccc;
     border-top: 1px solid #cccccc;
+  }
+}
+
+/* line 93, ../scss/pages/_listings.scss */
+.listing-header li.bed-bath {
+  width: 50%;
+  float: left;
+  font-size: 1.75em;
+  text-align: center;
+}
+/* line 98, ../scss/pages/_listings.scss */
+.listing-header li.bed-bath img {
+  height: 1.5em;
+  display: inline-block;
+  line-height: 0;
+}
+/* line 105, ../scss/pages/_listings.scss */
+.listing-header ul.basic-details {
+  text-align: center;
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 114, ../scss/pages/_listings.scss */
+  .listing-header .basic-details li, .listing-header li.bed-bath {
+    width: 25%;
+    float: left;
+  }
+}
+/* line 122, ../scss/pages/_listings.scss */
+.toolbox {
+  border: none;
+  background-color: transparent;
+}
+/* line 126, ../scss/pages/_listings.scss */
+.toolbox .sub-nav {
+  padding-top: 0;
+}
+/* line 130, ../scss/pages/_listings.scss */
+.toolbox .sub-nav dt, .toolbox .sub-nav dd {
+  margin-bottom: 0;
+}
+
+/* line 136, ../scss/pages/_listings.scss */
+dl.prop-features {
+  line-height: 1.25em;
+}
+/* line 139, ../scss/pages/_listings.scss */
+dl.prop-features dl {
+  line-height: 1.25em;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 144, ../scss/pages/_listings.scss */
+  dl.prop-features .list-header, dl.prop-features .prop-item {
+    display: inline-block;
+    float: left;
+    padding: 0.46875rem;
+  }
+  /* line 150, ../scss/pages/_listings.scss */
+  dl.prop-features .list-header {
+    width: 20%;
+  }
+  /* line 154, ../scss/pages/_listings.scss */
+  dl.prop-features .prop-item {
+    width: 16%;
+  }
+  /* line 158, ../scss/pages/_listings.scss */
+  dl.prop-features .prop-item dt {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  /* line 167, ../scss/pages/_listings.scss */
+  dl.prop-features .prop-item {
+    border-top: 1px solid #ddd;
+    padding-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  /* line 172, ../scss/pages/_listings.scss */
+  dl.prop-features .prop-item dl {
+    margin-bottom: 0;
+  }
+  /* line 175, ../scss/pages/_listings.scss */
+  dl.prop-features .prop-item dl dt, dl.prop-features .prop-item dl dd {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  /* line 180, ../scss/pages/_listings.scss */
+  dl.prop-features .prop-item dl dt {
+    width: 40%;
+  }
+  /* line 184, ../scss/pages/_listings.scss */
+  dl.prop-features .prop-item dl dd {
+    width: 60%;
   }
 }

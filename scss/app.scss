@@ -46,6 +46,17 @@ span.block {
 	display: block;
 }
 
+.bottom-0 {
+	margin-bottom: 0;
+}
+
+.panel.clear {
+	background-color: transparent;
+}
+
+.centered-list {
+	display: inline-block;
+}
 
 @media #{$small-only} {
 	.csr, .csb {
@@ -80,4 +91,5 @@ span.block {
 
 @import "components/sitefooter",
 		"components/siteheader",
+		"components/gallery",
 		"pages/listings";
