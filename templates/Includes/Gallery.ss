@@ -2,7 +2,7 @@
 	<div class="gallery-holder panel">
 		<ul>
 			<% loop $OrderedImages %>
-				<li><a href="#" class="th"><img src="http://placehold.it/150x150&text=Gallery+Image" /></a></li>
+				<li><a href="$Filename" class="th">$CroppedImage(150,150)</a></li>
 			<% end_loop %>
 		</ul>
 	</div>

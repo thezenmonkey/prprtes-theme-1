@@ -18,11 +18,20 @@
 				<% if $NumberRooms %><li><span class="room-icon">Total Rooms:</span> $NumberRooms</li><% end_if %>
 				<% if $TotalArea %><li><span class="area-icon">Total Area:</span> $TotalArea ft&sup2;</li><% end_if %>
 			</ul>
+			<% if $ClassName = "MLSListing" %>
+				<div class="small-12 columns">
+					<p class="text-center"><small>Listing provided by $ShowBroker</small></p>
+				</div>
+			<% end_if %>
 			<a class="button expand" href="#ContactForm">Schedule a Viewing</a>
 		</div>
 	</div>
 	<div class="small-12 medium-12 large-9 columns cover-image">
-		<img src="http://placehold.it/1400x787&text=Image+or+Video">
+		<% if $CoverImage %>
+			$CoverImage.SetWidth(1020)
+		<% else %>
+			<img src="http://placehold.it/1400x787&text=Image+or+Video">
+		<% end_if %>
 	</div>
 	<div class="small-12 columns">
 		<div class="panel bottom-0 toolbox">

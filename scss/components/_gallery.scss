@@ -1,6 +1,7 @@
 .gallery-holder {
 	border: none;
 	padding: $column-gutter/2 0;
+	border-bottom: 8px solid darken($primary-color, 10);
 	
 	ul {
 		white-space: nowrap;

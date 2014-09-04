@@ -56,7 +56,7 @@ html, body {
 /* line 362, ../bower_components/foundation/scss/foundation/components/_global.scss */
 html,
 body {
-  font-size: 100%;
+  font-size: 16px;
 }
 
 /* line 365, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -4711,8 +4711,8 @@ ul.pagination li {
 /* Panels */
 /* line 77, ../bower_components/foundation/scss/foundation/components/_panels.scss */
 .panel {
-  border-style: solid;
-  border-width: 1px;
+  border-style: none;
+  border-width: 0px;
   border-color: #d8d8d8;
   margin-bottom: 1.25rem;
   padding: 1.25rem;
@@ -4741,8 +4741,8 @@ ul.pagination li {
 }
 /* line 79, ../bower_components/foundation/scss/foundation/components/_panels.scss */
 .panel.callout {
-  border-style: solid;
-  border-width: 1px;
+  border-style: none;
+  border-width: 0px;
   border-color: #b6edff;
   margin-bottom: 1.25rem;
   padding: 1.25rem;
@@ -8199,8 +8199,9 @@ span.phone-icon img {
 .gallery-holder {
   border: none;
   padding: 0.9375rem 0;
+  border-bottom: 8px solid #006687;
 }
-/* line 5, ../scss/components/_gallery.scss */
+/* line 6, ../scss/components/_gallery.scss */
 .gallery-holder ul {
   white-space: nowrap;
   overflow-y: hidden;
@@ -8211,18 +8212,27 @@ span.phone-icon img {
   list-style: none;
   height: 160px;
 }
-/* line 15, ../scss/components/_gallery.scss */
+/* line 16, ../scss/components/_gallery.scss */
 .gallery-holder ul li {
   display: inline;
   margin-right: 0.9375rem;
 }
-/* line 20, ../scss/components/_gallery.scss */
+/* line 21, ../scss/components/_gallery.scss */
 .gallery-holder ul li:first-of-type {
   margin-left: 0.9375rem;
 }
-/* line 25, ../scss/components/_gallery.scss */
+/* line 26, ../scss/components/_gallery.scss */
 .gallery-holder img {
   line-height: 0;
+}
+
+/* line 10, ../scss/components/_icons.scss */
+.icon {
+  height: 16px;
+}
+/* line 13, ../scss/components/_icons.scss */
+.icon.icon-large {
+  height: 3em;
 }
 
 /* line 1, ../scss/pages/_listings.scss */
@@ -8372,35 +8382,29 @@ dl.prop-features dl {
   /* line 154, ../scss/pages/_listings.scss */
   dl.prop-features .prop-item {
     width: 16%;
+    text-align: center;
   }
-  /* line 158, ../scss/pages/_listings.scss */
+  /* line 159, ../scss/pages/_listings.scss */
   dl.prop-features .prop-item dt {
     margin-bottom: 0;
   }
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 167, ../scss/pages/_listings.scss */
+  /* line 168, ../scss/pages/_listings.scss */
   dl.prop-features .prop-item {
     border-top: 1px solid #ddd;
     padding-top: 0.5em;
     margin-bottom: 0.5em;
   }
-  /* line 172, ../scss/pages/_listings.scss */
+  /* line 173, ../scss/pages/_listings.scss */
+  dl.prop-features .prop-item .icon {
+    float: left;
+  }
+  /* line 177, ../scss/pages/_listings.scss */
   dl.prop-features .prop-item dl {
     margin-bottom: 0;
-  }
-  /* line 175, ../scss/pages/_listings.scss */
-  dl.prop-features .prop-item dl dt, dl.prop-features .prop-item dl dd {
     display: inline-block;
-    margin-bottom: 0;
-  }
-  /* line 180, ../scss/pages/_listings.scss */
-  dl.prop-features .prop-item dl dt {
-    width: 40%;
-  }
-  /* line 184, ../scss/pages/_listings.scss */
-  dl.prop-features .prop-item dl dd {
-    width: 60%;
+    float: left;
   }
 }

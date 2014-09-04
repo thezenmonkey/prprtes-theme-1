@@ -6,17 +6,18 @@
 
 <div class="row">
 	<div class="large-12 columns">
+		
+		<ul class="small-block-grid-1 large-block-grid-2">
+			<% loop $AllListings %>
+				<li>
+					<% include ListingItem %>
+				</li>
+			<% end_loop %>
+		</ul>
 		<div class="panel">
-			<ul>
-				<% loop $AllListings %>
-					<li><a href="$Link">$Title</a></li>
-				<% end_loop %>
-			</ul>
-		</div>
-		<div class="panel">
-			<ul>
+			<ul class="small-block-grid-1 large-block-grid-2">
 				<% loop $MLSListings %>
-					<li><a href="$Link">$Title</a></li>
+					<li><% include ListingItem %></li>
 				<% end_loop %>
 			</ul>
 		</div>

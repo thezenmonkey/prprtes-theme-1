@@ -4,7 +4,8 @@
 			<dl class="prop-features">
 				<dt class="list-header"><h3>Property Features</h3></dt>
 				<% if $LotLength && $LotWidth %>
-					<dd class="prop-item">
+					<dd class="prop-item clearfix">
+						<img class="icon icon-large" src="$ThemeDir/images/icons/brochure.svg" alt="brochure"> 
 						<dl>
 							<dt>Lot:</dt>
 							<dd>
@@ -14,7 +15,8 @@
 					</dd>
 				<% end_if %>
 				<% if $Topography %>
-					<dd class="prop-item">
+					<dd class="prop-item clearfix">
+						<img class="icon icon-large" src="$ThemeDir/images/icons/brochure.svg" alt="brochure"> 
 						<dl>
 							<dt>Topography:</dt>
 							<dd>$Topography</dd>
@@ -22,7 +24,8 @@
 					</dd>
 				<% end_if %>
 				<% if $Garage %>
-					<dd class="prop-item">
+					<dd class="prop-item clearfix">
+						<img class="icon icon-large" src="$ThemeDir/images/icons/brochure.svg" alt="brochure"> 
 						<dl>
 							<dt>Garage:</dt>
 							<dd>$Garage</dd>
@@ -30,7 +33,8 @@
 					</dd>
 				<% end_if %>
 				<% if $Driveway %>
-					<dd  class="prop-item">
+					<dd  class="prop-item clearfix">
+						<img class="icon icon-large" src="$ThemeDir/images/icons/brochure.svg" alt="brochure"> 
 						<dl>
 							<dt>Driveway:</dt>
 							<dd>$Driveway</dd>
@@ -38,7 +42,8 @@
 					</dd>
 				<% end_if %>
 				<% if $Basement %>
-					<dd class="prop-item">
+					<dd class="prop-item clearfix">
+						<img class="icon icon-large" src="$ThemeDir/images/icons/brochure.svg" alt="brochure"> 
 						<dl>
 							<dt>Basement:</dt>
 							<dd>$Basement</dd>
@@ -46,7 +51,8 @@
 					</dd>
 				<% end_if %>
 				<% if $AC %>
-					<dd class="prop-item">
+					<dd class="prop-item clearfix">
+						<img class="icon icon-large" src="$ThemeDir/images/icons/brochure.svg" alt="brochure"> 
 						<dl>
 							<dt>AC:</dt>
 							<dd>Yes</dd>
@@ -54,7 +60,8 @@
 					</dd>
 				<% end_if %>
 				<% if $Heat %>
-					<dd class="prop-item">
+					<dd class="prop-item clearfix">
+						<img class="icon icon-large" src="$ThemeDir/images/icons/brochure.svg" alt="brochure"> 
 						<dl>
 							<dt>Heat:</dt>
 							<dd>$Heat</dd>
@@ -62,7 +69,8 @@
 					</dd>
 				<% end_if %>
 				<% if $Construction %>
-					<dd class="prop-item">
+					<dd class="prop-item clearfix">
+						<img class="icon icon-large" src="$ThemeDir/images/icons/brochure.svg" alt="brochure"> 
 						<dl>
 							<dt>Construction:</dt>
 							<dd>$Construction</dd>
@@ -70,7 +78,8 @@
 					</dd>
 				<% end_if %>
 				<% if $Age %>
-					<dd class="prop-item">
+					<dd class="prop-item clearfix">
+						<img class="icon icon-large" src="$ThemeDir/images/icons/brochure.svg" alt="brochure"> 
 						<dl>
 							<dt>Age:</dt>
 							<dd>$Age</dd>
@@ -78,7 +87,8 @@
 					</dd>
 				<% end_if %>
 				<% if $Water %>
-					<dd class="prop-item">
+					<dd class="prop-item clearfix">
+						<img class="icon icon-large" src="$ThemeDir/images/icons/brochure.svg" alt="brochure"> 
 						<dl>
 							<dt>Water:</dt>
 							<dd>$Water</dd>
@@ -86,7 +96,8 @@
 					</dd>
 				<% end_if %>
 				<% if $Sewer %>
-					<dd class="prop-item">
+					<dd class="prop-item clearfix">
+						<img class="icon icon-large" src="$ThemeDir/images/icons/brochure.svg" alt="brochure"> 
 						<dl>
 							<dt>Sewer:</dt>
 							<dd>Yes</dd>

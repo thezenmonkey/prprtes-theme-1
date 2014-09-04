@@ -49,7 +49,7 @@
 		</div>
 		<div class="small-12 medium-6 large-3 columns csb cmr">
 			<span class="site-contact-holder">
-				<span class="icon phone-icon"><img alt="Phone" src="$ThemeDir/images/icons/phone-white.svg"></span>
+				<span class="phone-icon"><img alt="Phone" src="$ThemeDir/images/icons/phone-white.svg"></span>
 				<span class="site-contact">$SiteConfig.PhoneNumber</span>
 			</span>
 		</div>

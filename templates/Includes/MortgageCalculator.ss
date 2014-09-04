@@ -1,4 +1,4 @@
-<div id="MortgageCalculator" class="panel clear">
+<div id="MortgageCalculator" class="panel">
 	<div class="row">
 		<div class="small-12 columns">
 			<span class="calc-head">Mortgage Calculator</span>
