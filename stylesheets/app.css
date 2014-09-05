@@ -8408,3 +8408,59 @@ dl.prop-features dl {
     float: left;
   }
 }
+
+/*********************
+ ** Listing Item
+ ********************/
+/* line 191, ../scss/pages/_listings.scss */
+.flag {
+  display: inline-block;
+  background-color: #008cba;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5em;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 201, ../scss/pages/_listings.scss */
+.listing-top {
+  font-size: 1.25em;
+}
+/* line 203, ../scss/pages/_listings.scss */
+.listing-top a {
+  color: #222222;
+}
+
+/* line 208, ../scss/pages/_listings.scss */
+.listing-address {
+  font-size: 1em;
+}
+/* line 210, ../scss/pages/_listings.scss */
+.listing-address a {
+  color: #a2a2a2;
+  font-weight: bold;
+}
+
+/* line 216, ../scss/pages/_listings.scss */
+.listing-top, .listing-address {
+  margin-bottom: 0;
+}
+
+/* line 220, ../scss/pages/_listings.scss */
+.listing-summary p {
+  font-size: 0.875em;
+}
+
+/* line 226, ../scss/pages/_listings.scss */
+dl.listing-item-details dt, dl.listing-item-details dd {
+  display: inline;
+}
+/* line 229, ../scss/pages/_listings.scss */
+dl.listing-item-details dt {
+  margin-right: 0.25em;
+}
+/* line 232, ../scss/pages/_listings.scss */
+dl.listing-item-details dd {
+  margin-right: 0.75em;
+}

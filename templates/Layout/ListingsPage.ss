@@ -6,7 +6,22 @@
 
 <div class="row">
 	<div class="large-12 columns">
-		
+		<% if $ShowCities == 1 && $GetCities.Count > 1 %>
+			<% loop $GetCities %>
+				<% if $AllListings %>
+				<section class="municiple">
+					<h2>$Title</h2>
+					<ul class="small-block-grid-1 large-block-grid-2">
+						<% loop $AllListings %>
+							<li>
+								<% include ListingItem %>
+							</li>
+						<% end_loop %>
+					</ul>
+				</section>
+				<% end_if %>
+			<% end_loop %>
+		<% else %>
 		<ul class="small-block-grid-1 large-block-grid-2">
 			<% loop $AllListings %>
 				<li>
@@ -14,6 +29,7 @@
 				</li>
 			<% end_loop %>
 		</ul>
+		<% end_if %>
 		<div class="panel">
 			<ul class="small-block-grid-1 large-block-grid-2">
 				<% loop $MLSListings %>

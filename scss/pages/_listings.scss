@@ -183,3 +183,54 @@ dl.prop-features {
 		}
 	}
 }
+
+/*********************
+ ** Listing Item
+ ********************/
+
+.flag {
+	display: inline-block;
+	background-color: $primary-color;
+	font-weight: bold;
+	color: #fff;
+	padding: 0.5em;
+	position: absolute;
+	bottom:0;
+}
+
+.listing-top {
+	font-size: 1.25em;
+	a {
+		color: $body-font-color;
+	}
+}
+
+.listing-address {
+	font-size: 1em;
+	a {
+		color: lighten($body-font-color, 50);
+		font-weight: bold;
+	}
+}
+
+.listing-top, .listing-address {
+	margin-bottom: 0;
+}
+
+.listing-summary p {
+	font-size: 0.875em;
+} 
+
+dl.listing-item-details {
+	
+	dt, dd {
+		display: inline;
+	}
+	dt {
+		margin-right:0.25em;	 
+	}
+	dd {
+		margin-right: 0.75em;
+	}
+	
+}
