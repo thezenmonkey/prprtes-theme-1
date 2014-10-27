@@ -2,14 +2,16 @@
 	<div class="small-12 large-3 columns">
 		<div class="clearfix">
 			<h1 class="address">$Address <span class="block"><span class="town address-part">$Town</span> <span class="province address-part">$SiteConfig.Province</span> <span class="postal-code address-part">$PostalCode</span> <span class="mls-number address-part">MLS: $MLS</span></span></h1>
-			<h2>
-				$FormattedPrice <% if $SaleOrRent == "Lease" %><span>/month</span><% end_if %>
-				<% if $SaleOrRent == "Sale" && $HideMonthly == 0 && $MonthlyPrice %>
-					<span class="block monthly">Own For: $MonthlyPrice/month</span>
-				<% end_if %>
-				<% if $SaleOrRent == "Sale" && $HideMonthly == 0 && $MonthlyPrice && $CondoFee %> + <% end_if %>
-				<% if $CondoFee %><span class="block monthly">${$CondoFee}/month condo fee</span><% end_if %>
-			</h2>
+			<% if $Status == "Available" %>
+				<h2>
+					$FormattedPrice <% if $SaleOrRent == "Lease" %><span>/month</span><% end_if %>
+					<% if $SaleOrRent == "Sale" && $HideMonthly == 0 && $MonthlyPrice %>
+						<span class="block monthly">Own For: $MonthlyPrice/month</span>
+					<% end_if %>
+					<% if $SaleOrRent == "Sale" && $HideMonthly == 0 && $MonthlyPrice && $CondoFee %> + <% end_if %>
+					<% if $CondoFee %><span class="block monthly">${$CondoFee}/month condo fee</span><% end_if %>
+				</h2>
+			<% end_if %>
 		</div>
 		<div>
 			<ul class="no-bullet basic-details">
