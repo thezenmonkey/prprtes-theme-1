@@ -21,6 +21,18 @@
 				</section>
 				<% end_if %>
 			<% end_loop %>
+			<% if $TownListings %>
+				<section class="municiple">
+					<h2>Neighbouring Communities</h2>
+					<ul class="small-block-grid-1 large-block-grid-2">
+						<% loop $TownListings %>
+							<li>
+								<% include ListingItem %>
+							</li>
+						<% end_loop %>
+					</ul>
+				</section>
+			<% end_if %>
 		<% else %>
 		<ul class="small-block-grid-1 large-block-grid-2">
 			<% loop $AllListings %>
